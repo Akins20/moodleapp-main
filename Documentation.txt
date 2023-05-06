@@ -1,0 +1,8 @@
+Cloned from github repo
+Prepared environment using - 
+switched node version to 14.15.0
+installed JDK11
+npm install --legacy-peer-deps
+ionic cordova platform add android
+npm start or ng serve
+ionic cordova build android
