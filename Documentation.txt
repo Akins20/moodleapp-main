@@ -1,8 +1,31 @@
 Cloned from github repo
-Prepared environment using - 
+Prepared environment using -
 switched node version to 14.15.0
 installed JDK11
 npm install --legacy-peer-deps
 ionic cordova platform add android
 npm start or ng serve
 ionic cordova build android
+Edit the app settings file
+/config.xml
+
+Change the widget id value (instead com.moodle.moodlemobile your own id)
+Change the app name and description
+/www/moodle.config.json
+
+Change version name
+Add a pre-fixed URL: Adding a field like “siteurl”: “http://mysite.abc”
+Change gcmpn (if you are using your custom Google Push infrastructure)
+Change the appid (required for making Push notifications work)
+Remove demo sites (“demo_sites”: “”)
+Edit another app files
+/www/core/component/settings/lang/x.json (x means all the languages)
+
+Same for appVersion
+Replace the app icons, splashscreen
+Replace the resources/ icon.png and splash images
+Replace also the www/img/moodle.png with an image matching your logo
+In a console:
+cd mycustomappdir/
+ionic resources
+This will create your custom icon and splash images in all the required sizes
